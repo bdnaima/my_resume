@@ -1,0 +1,92 @@
+body {
+  background: #e5e5e5;
+  font-family: Arial, sans-serif;
+}
+
+.cv {
+  width: 800px;
+  min-height: 1000px;
+  margin: 50px auto;
+  display: flex;
+  background: #f5f1e8;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+  width: 250px;
+  background: #708800;
+  padding: 30px;
+  color: white;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact-item i {
+  width: 20px;
+}
+
+.header {
+  background: #b4cb3f;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  border-bottom: 4px solid black;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills span {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  background: #b4cb3f;
+  color: #fff;
+}
+
+.education-item {
+  margin-top: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.education-item h4 {
+  margin: 0;
+}
+
+.school {
+  margin: 2px 0;
+}
+
+.date {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 2px 8px;
+  background: rgba(0, 0, 0, 0.12);
+  font-size: 0.8rem;
+  border-radius: 12px;
+  font-weight: 500;
+}
