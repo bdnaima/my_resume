@@ -2,6 +2,10 @@
 
 A professional and responsive CV website built with HTML and CSS, showcasing frontend development experience, skills, and education.
 
+## View Live
+
+Visit the deployed CV: [https://bdnaima.github.io/my_resume/](https://bdnaima.github.io/my_resume/)
+
 ## Features
 
 - **Responsive Design**: Two-column layout with sidebar and main content
