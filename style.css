@@ -4,8 +4,8 @@ body {
 }
 
 .cv {
-  width: 800px;
-  min-height: 1000px;
+  max-width: 800px;
+  width: 100%;
   margin: 50px auto;
   display: flex;
   background: #f5f1e8;
@@ -26,6 +26,9 @@ body {
   border-radius: 50%;
   margin: 0 auto 30px;
   overflow: hidden;
+}
+.profile-pic-mobile {
+  display: none;
 }
 
 .profile-pic img {
@@ -81,6 +84,14 @@ h2 {
   color: #fff;
 }
 
+.skills-mobile-view {
+  display: none;
+}
+
+.education-mobile-view {
+  display: none;
+}
+
 .education-item {
   margin-top: 1.5rem;
   border-bottom: 1px solid #fff;
@@ -102,4 +113,73 @@ h2 {
   font-size: 0.8rem;
   border-radius: 12px;
   font-weight: 500;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  /*CV Section */
+  .cv {
+    flex-direction: column;
+  }
+  .sidebar,
+  .content {
+    width: 100%;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+  }
+  /* Profile pic section*/
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-pic {
+    display: none;
+  }
+  .profile-pic-mobile {
+    display: flex;
+    justify-content: center;
+  }
+  .profile-pic-mobile img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Education section for mobile */
+  .education-mobile-view {
+    display: block;
+  }
+  .education {
+    display: none;
+  }
+
+  /* Sidebar for mobile */
+  .sidebar {
+    order: 2;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .skills-mobile-view {
+    display: block;
+  }
+  .skills-desktop-view {
+    display: none;
+  }
+  .skills-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .skills-mobile span {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    background: #b574b3;
+    color: #fff;
+  }
 }
